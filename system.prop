@@ -1,0 +1,6 @@
+#
+# system.prop for shuttle 
+#
+
+rild.libpath=/system/lib/libhuaweigeneric-ril.so
+rild.libargs=-d /dev/ttyUSB2 -i ppp0
