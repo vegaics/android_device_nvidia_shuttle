@@ -133,6 +133,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libnvrm_graphics.so:system/lib/libnvrm_graphics.so \
     $(LOCAL_PATH)/proprietary/libnvsm.so:system/lib/libnvsm.so \
     $(LOCAL_PATH)/proprietary/libnvwsi.so:system/lib/libnvwsi.so \
+    $(LOCAL_PATH)/proprietary/libardrv_dynamic.so:system/lib/libardrv_dynamic.so \
     $(LOCAL_PATH)/proprietary/libstagefrighthw.so:system/lib/libstagefrighthw.so
 	
 	
@@ -161,6 +162,15 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
 
 # NFC
+#PRODUCT_PACKAGES += \
+#        libnfc \
+#        libnfc_jni \
+#        Nfc \
+#        Tag
+
+# Live Wallpapers
+PRODUCT_PACKAGES += \
+	HoloSpiralWallpaper \
 PRODUCT_PACKAGES += \
         libnfc \
         libnfc_jni \
@@ -169,7 +179,7 @@ PRODUCT_PACKAGES += \
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
-		HoloSpiralWallpaper \
+	HoloSpiralWallpaper \
         LiveWallpapers \
         LiveWallpapersPicker \
         VisualizationWallpapers \
@@ -221,12 +231,12 @@ PRODUCT_PACKAGES += \
 	setup_fs
 
 # for bugmailer
-ifneq ($(TARGET_BUILD_VARIANT),user)
-	PRODUCT_PACKAGES += send_bug
-	PRODUCT_COPY_FILES += \
-		system/extras/bugmailer/bugmailer.sh:system/bin/bugmailer.sh \
-		system/extras/bugmailer/send_bug:system/bin/send_bug
-endif
+#ifneq ($(TARGET_BUILD_VARIANT),user)
+#	PRODUCT_PACKAGES += send_bug
+#	PRODUCT_COPY_FILES += \
+#		system/extras/bugmailer/bugmailer.sh:system/bin/bugmailer.sh \
+#		system/extras/bugmailer/send_bug:system/bin/send_bug
+#endif
 
 $(call inherit-product, frameworks/base/build/tablet-dalvik-heap.mk)
 #$(call inherit-product, vendor/nvidia/shuttle/device-vendor.mk)

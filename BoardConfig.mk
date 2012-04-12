@@ -57,7 +57,6 @@ BOARD_WPA_SUPPLICANT_DRIVER := WEXT
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_atheros
 BOARD_HOSTAPD_DRIVER        := AR6000
-
 BOARD_WLAN_DEVICE           := ar6002
 
 #BOARD_WLAN_ATHEROS_SDK      := AR6kSDK.2.2.1.151
@@ -71,8 +70,23 @@ WIFI_DRIVER_LOADER_DELAY	:= 3000000
 # 3G
 BOARD_MOBILEDATA_INTERFACE_NAME := "ppp0"
 
+#BT
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
+#GPS
+BOARD_HAVE_GPS := true
+
+
+#Other tweaks
+BOARD_USE_SCREENCAP := true
 PRODUCT_CHARACTERISTICS := tablet
 BOARD_USES_SECURE_SERVICES := true
+# Use a smaller subset of system fonts to keep image size lower
+SMALLER_FONT_FOOTPRINT := true
+# Skip droiddoc build to save build time
+BOARD_SKIP_ANDROID_DOC_BUILD := true
+TARGET_RECOVERY_PRE_COMMAND := "setrecovery boot-recovery recovery"
+BOARD_HDMI_MIRROR_MODE := Scale
+# Setting this to avoid boot locks on the system from using the "misc" partition.
+BOARD_HAS_NO_MISC_PARTITION := true
