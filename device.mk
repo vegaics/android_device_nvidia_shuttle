@@ -78,6 +78,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/files/vold.fstab:system/etc/vold.fstab
    $(LOCAL_PATH)/files/vega_postboot.sh:system/etc/vega_postboot.sh
+   $(LOCAL_PATH)/files/ShuttleTools.apk:system/app/ShuttleTools.apk
+   $(LOCAL_PATH)/files/recovery-reboot.apk:system/app/recovery-reboot.apk
    
 # APNs list
 PRODUCT_COPY_FILES += \
