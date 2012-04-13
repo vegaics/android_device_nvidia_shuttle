@@ -77,6 +77,7 @@ PRODUCT_PACKAGES += \
 # Generic
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/files/vold.fstab:system/etc/vold.fstab
+   $(LOCAL_PATH)/files/vega_postboot.sh:system/etc/vega_postboot.sh
    
 # APNs list
 PRODUCT_COPY_FILES += \
@@ -154,7 +155,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES := \
     wifi.interface=wlan0 \
-    ro.sf.lcd_density=120 \
+    ro.sf.lcd_density=160 \
     wifi.supplicant_scan_interval=15
 
 # Set default USB interface
