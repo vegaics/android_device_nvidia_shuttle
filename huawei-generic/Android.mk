@@ -13,9 +13,9 @@ LOCAL_SRC_FILES:= \
     sms.c \
     sms_gsm.c \
     gsm.c \
-	requestdatahandler.c \
-	fcp_parser.c \
-	audiochannel.cpp 
+    requestdatahandler.c \
+    fcp_parser.c \
+    audiochannel.cpp 
 	
 
 LOCAL_SHARED_LIBRARIES := \
