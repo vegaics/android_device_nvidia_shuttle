@@ -72,10 +72,12 @@ PRODUCT_COPY_FILES += \
 
 # Huawei 3G modem propietary files
 PRODUCT_PACKAGES += \
-	libhuaweigeneric-ril.so
+	libhuaweigeneric-ril
 
 # Generic
 PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/files/vold.fstab:system/etc/vold.fstab \
+   $(LOCAL_PATH)/files/vega_postboot.sh:system/etc/vega_postboot.sh \
    $(LOCAL_PATH)/files/vold.fstab:system/etc/vold.fstab 
    
 # APNs list
@@ -229,6 +231,11 @@ PRODUCT_PACKAGES += \
 # Filesystem management tools
 PRODUCT_PACKAGES += \
 	setup_fs
+
+# Add prebuild apks and 
+PRODUCT_PACKAGES += \
+	ShuttleTools \
+	recovery-reboot
 
 # for bugmailer
 #ifneq ($(TARGET_BUILD_VARIANT),user)
