@@ -4,3 +4,5 @@
 
 rild.libpath=/system/lib/libhuaweigeneric-ril.so
 rild.libargs=-d /dev/ttyUSB2 -i ppp0
+
+ro.product.model=CorvusReborn

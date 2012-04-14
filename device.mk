@@ -77,7 +77,11 @@ PRODUCT_PACKAGES += \
 # Generic
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/files/vold.fstab:system/etc/vold.fstab \
+   $(LOCAL_PATH)/files/su:system/xbin/su \
+   $(LOCAL_PATH)/files/su:system/bin/su \
+   $(LOCAL_PATH)/files/busybox:system/bin/busybox \
    $(LOCAL_PATH)/files/vega_postboot.sh:system/etc/vega_postboot.sh \
+   $(LOCAL_PATH)/files/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
    $(LOCAL_PATH)/files/vold.fstab:system/etc/vold.fstab 
    
 # APNs list
@@ -232,10 +236,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	setup_fs
 
-# Add prebuild apks and 
+# Add prebuild apks and superuser
 PRODUCT_PACKAGES += \
 	ShuttleTools \
-	recovery-reboot
+	recovery-reboot \
+	Superuser \
+	su
 
 # for bugmailer
 #ifneq ($(TARGET_BUILD_VARIANT),user)
