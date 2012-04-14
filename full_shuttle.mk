@@ -31,4 +31,4 @@ $(call inherit-product, device/nvidia/shuttle/device.mk)
 PRODUCT_NAME := full_shuttle
 PRODUCT_DEVICE := shuttle
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Full AOSP on Shuttle
+PRODUCT_MODEL := CorvusReborn
