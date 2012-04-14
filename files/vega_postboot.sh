@@ -58,6 +58,7 @@ fi
 # Misc Filesystem permissions
 chmod -R 755 /system/bin
 chmod 6755 /system/bin/su
+chmod 6755 /system/xbin/su
 chmod -R 755 /system/etc
 chown 1010 /system/etc/wifi
 chgrp 1010 /system/etc/wifi
