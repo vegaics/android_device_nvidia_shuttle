@@ -82,7 +82,9 @@ PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/files/busybox:system/bin/busybox \
    $(LOCAL_PATH)/files/vega_postboot.sh:system/etc/vega_postboot.sh \
    $(LOCAL_PATH)/files/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-   $(LOCAL_PATH)/files/vold.fstab:system/etc/vold.fstab 
+   $(LOCAL_PATH)/files/vold.fstab:system/etc/vold.fstab \
+   $(LOCAL_PATH)/files/setrecovery:system/bin/setrecovery \
+   $(LOCAL_PATH)/files/recovery:system/bin/recovery 
    
 # APNs list
 PRODUCT_COPY_FILES += \
