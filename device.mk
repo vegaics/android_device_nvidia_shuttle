@@ -74,6 +74,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	libhuaweigeneric-ril
 
+# Tun
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/files/tun.ko:system/lib/modules/tun.ko
+
 # Generic
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/files/vold.fstab:system/etc/vold.fstab \
