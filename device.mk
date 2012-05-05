@@ -147,7 +147,13 @@ PRODUCT_COPY_FILES += \
 	
 # Bluetooth configuration files
 PRODUCT_COPY_FILES += \
-	system/bluetooth/data/main.le.conf:system/etc/bluetooth/main.conf
+   $(LOCAL_PATH)/files/main.conf:system/etc/bluetooth/main.conf \
+   $(LOCAL_PATH)/files/bluecore6.psr:system/etc/bluez/bluecore6.psr \
+   $(LOCAL_PATH)/files/bluecore6.psr:system/etc/bluecore6.psr \
+   $(LOCAL_PATH)/files/hciattach:/system/bin/hciattach \
+   $(LOCAL_PATH)/files/nv_hciattach:/system/bin/nv_hciattach \
+   $(LOCAL_PATH)/files/bccmd:/system/bin/bccmd
+
 
 # Wifi
 PRODUCT_COPY_FILES += \
