@@ -23,6 +23,11 @@ USE_CAMERA_STUB := true
 
 #TARGET_NO_RECOVERY := true
 TARGET_NO_BOOTLOADER := true
+TARGET_BOOTLOADER_BOARD_NAME := p10an01
+
+# Keymapping 
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := device/nvidia/shuttle/recovery_ui.c
+
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a
