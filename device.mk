@@ -123,27 +123,58 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
     $(LOCAL_PATH)/proprietary/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
     $(LOCAL_PATH)/proprietary/libcgdrv.so:system/lib/libcgdrv.so \
+    $(LOCAL_PATH)/proprietary/libnvasfparserhal.so:system/lib/libnvasfparserhal.so \
+    $(LOCAL_PATH)/proprietary/libnvaviparserhal.so:system/lib/libnvaviparserhal.so \
+    $(LOCAL_PATH)/proprietary/libnvavp.so:system/lib/libnvavp.so \
+    $(LOCAL_PATH)/proprietary/libnvcpud_client.so:system/lib/libnvcpud_client.so \
+    $(LOCAL_PATH)/proprietary/libnvcpud.so:system/lib/libnvcpud.so \
     $(LOCAL_PATH)/proprietary/libnvddk_2d.so:system/lib/libnvddk_2d.so \
     $(LOCAL_PATH)/proprietary/libnvddk_2d_v2.so:system/lib/libnvddk_2d_v2.so \
     $(LOCAL_PATH)/proprietary/libnvddk_audiofx.so:system/lib/libnvddk_audiofx.so \
     $(LOCAL_PATH)/proprietary/libnvdispatch_helper.so:system/lib/libnvdispatch_helper.so \
     $(LOCAL_PATH)/proprietary/libnvdispmgr_d.so:system/lib/libnvdispmgr_d.so \
+    $(LOCAL_PATH)/proprietary/libnvhdmi3dplay_jni.so:system/lib/libnvhdmi3dplay_jni.so \
     $(LOCAL_PATH)/proprietary/libnvmm.so:system/lib/libnvmm.so \
+    $(LOCAL_PATH)/proprietary/libnvmm_asfparser.so:system/lib/libnvmm_asfparser.so \
+    $(LOCAL_PATH)/proprietary/libnvmm_audio.so:system/lib/libnvmm_audio.so \
+    $(LOCAL_PATH)/proprietary/libnvmm_aviparser.so:system/lib/libnvmm_aviparser.so \
     $(LOCAL_PATH)/proprietary/libnvmm_camera.so:system/lib/libnvmm_camera.so \
     $(LOCAL_PATH)/proprietary/libnvmm_contentpipe.so:system/lib/libnvmm_contentpipe.so \
     $(LOCAL_PATH)/proprietary/libnvmm_image.so:system/lib/libnvmm_image.so \
     $(LOCAL_PATH)/proprietary/libnvmm_manager.so:system/lib/libnvmm_manager.so \
+    $(LOCAL_PATH)/proprietary/libnvmm_misc.so:system/lib/libnvmm_misc.so \
+    $(LOCAL_PATH)/proprietary/libnvmm_msaudio.so:system/lib/libnvmm_msaudio.so \
+    $(LOCAL_PATH)/proprietary/libnvmm_parser.so:system/lib/libnvmm_parser.so \
     $(LOCAL_PATH)/proprietary/libnvmm_service.so:system/lib/libnvmm_service.so \
     $(LOCAL_PATH)/proprietary/libnvmm_tracklist.so:system/lib/libnvmm_tracklist.so \
     $(LOCAL_PATH)/proprietary/libnvmm_utils.so:system/lib/libnvmm_utils.so \
+    $(LOCAL_PATH)/proprietary/libnvmm_vc1_video.so:system/lib/libnvmm_vc1_video.so \
     $(LOCAL_PATH)/proprietary/libnvmm_video.so:system/lib/libnvmm_video.so \
+    $(LOCAL_PATH)/proprietary/libnvmm_vp6_video.so:system/lib/libnvmm_vp6_video.so \
+    $(LOCAL_PATH)/proprietary/libnvmm_writer.so:system/lib/libnvmm_writer.so \
+    $(LOCAL_PATH)/proprietary/libnvmmlite.so:system/lib/libnvmmlite.so \
+    $(LOCAL_PATH)/proprietary/libnvmmlite_audio.so:system/lib/libnvmmlite_audio.so \
+    $(LOCAL_PATH)/proprietary/libnvmmlite_utils.so:system/lib/libnvmmlite_utils.so \
+    $(LOCAL_PATH)/proprietary/libnvmmlite_video.so:system/lib/libnvmmlite_video.so \
+    $(LOCAL_PATH)/proprietary/libnvodm_dtvtuner.so:system/lib/libnvodm_dtvtuner.so \
+    $(LOCAL_PATH)/proprietary/libnvodm_hdmi.so:system/lib/libnvodm_hdmi.so \
+    $(LOCAL_PATH)/proprietary/libnvodm_imager.so:system/lib/libnvodm_imager.so \
+    $(LOCAL_PATH)/proprietary/libnvodm_misc.so:system/lib/libnvodm_misc.so \
+    $(LOCAL_PATH)/proprietary/libnvodm_query.so:system/lib/libnvodm_query.so \
     $(LOCAL_PATH)/proprietary/libnvomx.so:system/lib/libnvomx.so \
+    $(LOCAL_PATH)/proprietary/libnvomxadaptor.so:system/lib/libnvomxadaptor.so \
     $(LOCAL_PATH)/proprietary/libnvomxilclient.so:system/lib/libnvomxilclient.so \
     $(LOCAL_PATH)/proprietary/libnvos.so:system/lib/libnvos.so \
+    $(LOCAL_PATH)/proprietary/libnvparser.so:system/lib/libnvparser.so \
     $(LOCAL_PATH)/proprietary/libnvrm.so:system/lib/libnvrm.so \
     $(LOCAL_PATH)/proprietary/libnvrm_channel.so:system/lib/libnvrm_channel.so \
     $(LOCAL_PATH)/proprietary/libnvrm_graphics.so:system/lib/libnvrm_graphics.so \
     $(LOCAL_PATH)/proprietary/libnvsm.so:system/lib/libnvsm.so \
+    $(LOCAL_PATH)/proprietary/libnvsystemuiext_jni.so:system/lib/libnvsystemuiext_jni.so \
+    $(LOCAL_PATH)/proprietary/libnvtestio.so:system/lib/libnvtestio.so \
+    $(LOCAL_PATH)/proprietary/libnvtestresults.so:system/lib/libnvtestresults.so \
+    $(LOCAL_PATH)/proprietary/libnvtvmr.so:system/lib/libnvtvmr.so \
+    $(LOCAL_PATH)/proprietary/libnvwinsys.so:system/lib/libnvwinsys.so \
     $(LOCAL_PATH)/proprietary/libnvwsi.so:system/lib/libnvwsi.so \
     $(LOCAL_PATH)/proprietary/libardrv_dynamic.so:system/lib/libardrv_dynamic.so \
     $(LOCAL_PATH)/proprietary/libstagefrighthw.so:system/lib/libstagefrighthw.so
@@ -187,8 +218,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 #        Tag
 
 # Live Wallpapers
-PRODUCT_PACKAGES += \
-	HoloSpiralWallpaper \
+#PRODUCT_PACKAGES += \
+#	HoloSpiralWallpaper \
 PRODUCT_PACKAGES += \
         libnfc \
         libnfc_jni \
