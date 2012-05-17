@@ -2,7 +2,13 @@
 # system.prop for shuttle 
 #
 
-rild.libpath=/system/lib/libhuaweigeneric-ril.so
-rild.libargs=-d /dev/ttyUSB2 -i ppp0
+#
+# 3G Additions
+#
+picasso.3g=true
+rild.libpath=/system/lib/libhuawei-ril.so
+rild.libargs=-d /dev/ttyUSB2 
+ro.pad.features.modem=true 
 
-ro.product.model=CorvusReborn
+ro.product.model=Full Shuttle
+
