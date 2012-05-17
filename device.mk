@@ -70,9 +70,22 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/files/media_profiles.xml:system/etc/media_profiles.xml
 
-# Huawei 3G modem propietary files
-PRODUCT_PACKAGES += \
-	libhuaweigeneric-ril
+# Huawei 3G modem propietary files and PPP scripts
+#PRODUCT_PACKAGES += \
+#
+#	libhuaweigeneric-ril
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/files/libhuawei-ril.so:system/lib/libhuawei-ril.so \
+   $(LOCAL_PATH)/files/etc/init.gprs-pppd:system/etc/init.gprs-pppd \
+   $(LOCAL_PATH)/files/etc/ppp/chap-secrets:system/etc/ppp/chap-secrets \
+   $(LOCAL_PATH)/files/etc/ppp/gprs-connect-chat:system/etc/ppp/gprs-connect-chat \
+   $(LOCAL_PATH)/files/etc/ppp/ip-down:system/etc/ppp/ip-down \
+   $(LOCAL_PATH)/files/etc/ppp/ip-down-HUAWEI:system/etc/ppp/ip-down-HUAWEI \
+   $(LOCAL_PATH)/files/etc/ppp/ip-up:system/etc/ppp/ip-up \
+   $(LOCAL_PATH)/files/etc/ppp/ip-up-HUAWEI:system/etc/ppp/ip-up-HUAWEI \
+   $(LOCAL_PATH)/files/etc/ppp/options.huawei:system/etc/ppp/options.huawei \
+   $(LOCAL_PATH)/files/etc/ppp/pap-secrets:system/etc/ppp/pap-secrets \
+   $(LOCAL_PATH)/files/etc/ppp/peers/pppd-ril.options:system/etc/ppp/peers/pppd-ril.options
 
 # Tun
 PRODUCT_COPY_FILES += \
@@ -177,8 +190,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libnvwinsys.so:system/lib/libnvwinsys.so \
     $(LOCAL_PATH)/proprietary/libnvwsi.so:system/lib/libnvwsi.so \
     $(LOCAL_PATH)/proprietary/libardrv_dynamic.so:system/lib/libardrv_dynamic.so \
-    $(LOCAL_PATH)/proprietary/libstagefrighthw.so:system/lib/libstagefrighthw.so
-	
+    $(LOCAL_PATH)/proprietary/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+    $(LOCAL_PATH)/proprietary/omxplayer.so:system/lib/omxplayer.so
 	
 # Bluetooth configuration files
 PRODUCT_COPY_FILES += \
@@ -211,15 +224,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
 
 # NFC
-#PRODUCT_PACKAGES += \
-#        libnfc \
-#        libnfc_jni \
-#        Nfc \
-#        Tag
-
-# Live Wallpapers
-#PRODUCT_PACKAGES += \
-#	HoloSpiralWallpaper \
 PRODUCT_PACKAGES += \
         libnfc \
         libnfc_jni \
